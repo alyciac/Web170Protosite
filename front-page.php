@@ -34,10 +34,17 @@
              
         <hr></hr>
         
-	<!--Begin Navigation-->
-	<?php wp_nav_menu( array ('theme_location' => 'main-menu', 'container'=> 'div', 'container_id' => 'navigation',
-	    'items_wrap' => '<ul id="navigation-items" class=%2$s">%3$s</ul>', )); ?>
-	<!--End Navigation-->
+        <div class="nav">
+            <ul>
+                <li><a href=#gallery>Gallery</a></li>
+                <li><a href=#investment>Investment</a></li>
+                <li><a href="main.html">About</a></li>
+                <li><a href=#contact>Contact</a></li>
+                <li><a href=#blog>Blog</a></li>
+            </ul>
+        </div>
+        <br>
+        
             
     </div>
     

@@ -23,6 +23,17 @@ Version: 1.0
     position: relative;
 }
 
+#navigation ul li ul.sub-menu{
+    display: none;
+
+}
+
+@media screen and (max-width: 600px){
+    #navigation ul li ul.sub-menu{
+        display:block;
+    }
+}
+
 .nav li{
     display: inline;
     padding-left: 20px; 
@@ -31,6 +42,10 @@ Version: 1.0
     list-style: none;
     margin: 0;
     padding: 0; 
+}
+
+#navigation ul li.current-menu-item a, #navigation ul li.current_menu_parent a{
+    color: #60F4EA;  /*pale green*/
 }
 
 li{
