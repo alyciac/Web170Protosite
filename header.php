@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <!-- Begin JavaScript for Flexslider - Woohoo Themes -->
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+	
+	
+	<script type="text/javascript" charset="utf-8">
+	$(window).load(function() {
+	    $('.flexslider').flexslider();
+	});
+	</script>
+     <!-- End JavaScript for Flexslider - Woohoo Themes -->
+	
+	
+	
     <title><?php bloginfo('description'); ?>| <?php bloginfo('name'); ?></title>
 	
 	<!--Begin Style-->
-	 
-    <link rel="stylesheet" href="<?bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
-	
+	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 	
 	<!--End Style-->
      

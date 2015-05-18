@@ -1,15 +1,15 @@
 <!--Begin Sidebar -->
-<div id ="sidebar">  
+<div id="sidebar">  
 <!--Begin Subnavigation-->
     <div id="sub-navigation" class="widget">
         <!--The Is Page Function-->
 		<?php if (is_page())://if we are in pages...?>
 		
 	<!--The Get Title and List Page Functions-->
-        <h2 class="sub-navigation-title">
+        <h3 class="sub-navigation-title">
             <?php echo get_the_title($post->post_parent); //get the gateway page title
 	    ?>
-        </h2>
+        </h3>
         
         <ul class="sub-navigation-items">
             <?php
@@ -29,7 +29,7 @@
         
 	
         <?php if(!(is_page( ))) : // if we are not in pages... ?>
-			<h2 class="sub-navigation-title">Blog</h2>
+			<h3 class="sub-navigation-title">Blog</h3>
 			<ul class="sub-navigation-items">
 				<!--List Categories Function-->
 				<?php wp_list_categories(array('title_li' => __(''))); //...list the categories with no title
