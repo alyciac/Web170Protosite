@@ -200,11 +200,9 @@ a{
     width: 75%;
     margin: 0;
     padding-bottom: 25px;
-    position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;  
     
 }
 
@@ -234,7 +232,6 @@ h2{
     color: #6f6f6f ;
     text-decoration: none;
     font-size: 75%;
-    text-align: left;
     padding: 10px;
     margin: auto; 
     
@@ -298,15 +295,15 @@ margin-right: 20px;
 margin-right: 0px;
 }
 
-/*-----Post Except Style, not working right now, revist -----*/
+/*-----Post Except Style-----*/
 
 #content article.post-except{
     overflow: hidden;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 
-/*-----Post Thumbnails Selectors, not working right now, revisit-----*/
+/*-----Post Thumbnails Selectors-----*/
 
 #content img.wp-post-image {
 }
@@ -324,3 +321,5 @@ margin-right: 0px;
 
 #content img.attachment-full {
 }
+
+/*-----update 5.29 2.42pm -----*/
