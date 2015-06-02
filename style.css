@@ -203,16 +203,17 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
     
 }
 
-#footer{  
+#footer{
+    clear:both;
+    width:100%;
     font-style: oblique;
     color: #6f6f6f ;
     text-decoration: none;
-    text-align: center;
-    font-size: 125%; 
-    position: relative;
+    font-size: 125%;
     width: 75%;
     margin: auto;
 }
@@ -229,9 +230,8 @@ h1{
 
 h2{
     font-style: oblique;
-    color: #6f6f6f ;
+    color: #f48590 ;
     text-decoration: none;
-    font-size: 75%;
     padding: 10px;
     margin: auto; 
     
@@ -322,4 +322,4 @@ margin-right: 0px;
 #content img.attachment-full {
 }
 
-/*-----update 5.29 2.42pm -----*/
+/*-----update 5.29 5:52pm -----*/

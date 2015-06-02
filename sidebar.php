@@ -34,11 +34,32 @@
 				<!--List Categories Function-->
 				<?php wp_list_categories(array('title_li' => __(''))); //...list the categories with no title
 				    ?>
-				<?php endif; ?> 
+	<?php endif; ?> 
 				
 			</ul>
     </div>
 <!--End Subnavigation-->
+
+<!--Begin Quote-->
+    <?php if (get_post_meta($post->ID, 'Quote', true)):
+	//check to see if there is a quote
+    ?>
+    <blockquote>
+	<?php echo get_post_meta($post->ID, 'Quote', true);
+	    //write the quote
+	?>
+    </blockquote>
+    
+    <?php endif; ?>
+<!--End Quote-->
+
+<!--Begin Dynamic Sidebar-->
+    
+    <?php dynamic_sidebar(1); //call the widgets ?>
+
+<!--End Dynamic Sidebar-->
+
+
 <small>sidebar.php</small>
 </div>
 <!--End Sidebar -->
