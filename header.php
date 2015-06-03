@@ -17,14 +17,18 @@
 	
 	
 	
-    <title><?php bloginfo('description'); ?>| <?php bloginfo('name'); ?></title>
+    <title><?php get_my_title_tag(); ?></title>
+    
+    <!-- Begin Meta - Pulls from the pages Except Field -->
+    <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
+    <!-- End Meta -->
 	
-	<!--Begin Style-->
+    <!--Begin Style-->
 	    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 	
-	<!--End Style-->
+    <!--End Style-->
      
-	<?php wp_head(); ?>	 
+    <?php wp_head(); ?>	 
     
 </head>
 

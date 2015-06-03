@@ -8,6 +8,46 @@ Description: I'm gunna learn WordPress!
 Version: 1.0
 */
 
+//Get My Title Tag
+function get_my_title_tag(){
+    
+    global $post;
+    
+    if ( is_front_page() ){ //for site's front page
+        
+        bloginfo('description'); //retrieve the site tagline
+        
+    }
+    
+    elseif ( is_page() || is_single()){ //for site's Pages or Postings 
+        
+        the_title(); //retrieve the page or posting title
+        
+    }
+    
+    else{ //for everything else
+        
+        bloginfo('description'); //retrive the sites tagline 
+        
+    }
+    
+    if ($post->post_parent){ //for your site's parent pages aka category 
+        echo ' | '; //seperator
+        echo get_the_title($post->post_parent); //retrive the parent title 
+    }
+    
+    
+    //this is for everypage 
+    echo ' | '; //seperator
+    bloginfo('name'); //retrive the site name
+    echo ' | '; //seperator
+    echo 'Sacramento Area, CA'; 
+
+}
+
+// Enables excepts for pages, allows us to pull excerpt from all pages and postings
+add_post_type_support('page', 'excerpt' );
+
 //Register Sidedar 
 register_sidebar(array (  
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
